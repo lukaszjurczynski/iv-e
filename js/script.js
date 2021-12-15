@@ -13,7 +13,7 @@ function createItemHTML(e) {
             </h3>
             <div class="item__text-content">
                     <p class="author"><span class="indicator">By:</span><a href="${element.links.html}" class="link" target="self">${element.user.name}</a></p>
-                    <p class="date"><span class="indicator">On:</span>${element.created_at}</p>
+                    <p class="date"><span class="indicator">On:</span>${element.created_at.slice(0, 10)}</p>
             </div>
             <img src="${element.urls.small}" alt="image" class="item__background-image">
         </figure>
